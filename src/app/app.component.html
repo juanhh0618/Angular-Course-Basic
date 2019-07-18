@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!--<div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Bienvenido a Angular
   </h1>
   <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
@@ -17,4 +17,70 @@
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
 </ul>
+ <hello-world></hello-world>
+<hello-world></hello-world>
+<hello-world></hello-world> 
+<app-hola-mundo></app-hola-mundo>
 
+<ul>
+   
+  {{user}}
+  <app-user *ngFor="let user of users" [nameUser]="user"></app-user>
+  
+</ul>
+
+-->
+<!-- <ul>
+  <li *ngIf="activated">
+    Activado
+  </li>
+</ul>
+
+<div>
+  <p>name: {{name}}</p>
+  <p>street: {{address.street}}</p>
+  <p>city: {{address.city}}</p>
+  <p>age: {{age}}</p>
+  <ul>
+      <li *ngFor="let hobby of hobbies">
+         {{hobby}}
+      </li>
+    </ul>
+  
+</div>
+
+<form (submit)="addUser(newUser)">
+    <input type="text" #newUser>
+    <button>Send User</button>
+</form> 
+  
+<ul>
+  <li *ngFor="let user of users">{{user}} - <button (click)="deleteUser(user)">X</button></li>  
+</ul>
+
+<div>
+  <form>
+    <input type="text" name="name" [(ngModel)]="name">
+    <input type="text" name="age" [(ngModel)]="age">
+  </form>
+  name: {{name}}
+  <br>
+  age: {{age}}
+</div>
+
+<hr>
+<div *ngFor="let post of posts">
+  <h3>{{post.title}}</h3>
+  <p>{{post.body}}</p>
+</div>
+-->
+<ul>
+  <li>
+    <a routerLink="/">Home</a>
+  </li>
+  <li>
+    <a routerLink="/about">About</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
